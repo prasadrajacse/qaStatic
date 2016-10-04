@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="qandastyles.css">
+    <link rel="stylesheet" href="app.styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top qa-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/unnamed.gif" alt="Dispute Bills"/>
+                    <h4>Cognitive Advisor for Supply Chain</h4>
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="username"href="#">Welcome Durga Prasad Telu</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid">
+    <div class="row">
+<!--http://stackoverflow.com/questions/9997192/twitter-bootstrap-fixed-layout-with-scrollable-sidebar -->
+        <section class="col-xs-12  col-sm-9 col-md-9 col-ld-9 scrollable left">
+            <div class="dialogs" style="padding:20px">
+                <div class="message user">
+                    <div class="container">
+                        <span class="text">Is Part Number 00D5302 needed for Customer Orders?</span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <div class="message watson">
+                    <div class="container">
+                        <span class="text">Yes, Part Number 00D5302 has shortage vs Orders Load at GUADALAJARA for STORAGE</span>
+                        <br><span style="display:block;text-align:right;color: green; font-size: 10pt">confidence 0.97</span>
+                        <span class="arrow"></span>
+                        <span style="position:absolute;bottom:0px;right:-25px;">
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-up qa-thumbs-icon"></span>
+                            </a>
+                            <br>
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-down qa-thumbs-icon"></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="dialogs" style="padding:20px">
+                <div class="message user">
+                    <div class="container">
+                        <span class="text">Is Part Number 00D5302 needed for Customer Orders?</span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <div class="message watson">
+                    <div class="container">
+                        <span class="text">Yes, Part Number 00D5302 has shortage vs Orders Load at GUADALAJARA for STORAGE</span>
+                        <br><span style="display:block;text-align:right;color: green; font-size: 10pt">confidence 0.97</span>
+                        <span class="arrow"></span>
+                        <span style="position:absolute;bottom:0px;right:-25px;">
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-up qa-thumbs-icon"></span>
+                            </a>
+                            <br>
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-down qa-thumbs-icon"></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="dialogs" style="padding:20px">
+                <div class="message user">
+                    <div class="container">
+                        <span class="text">Is Part Number 00D5302 needed for Customer Orders?</span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <div class="message watson">
+                    <div class="container">
+                        <span class="text">Yes, Part Number 00D5302 has shortage vs Orders Load at GUADALAJARA for STORAGE</span>
+                        <br><span style="display:block;text-align:right;color: green; font-size: 10pt">confidence 0.97</span>
+                        <span class="arrow"></span>
+                        <span style="position:absolute;bottom:0px;right:-25px;">
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-up qa-thumbs-icon"></span>
+                            </a>
+                            <br>
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-down qa-thumbs-icon"></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="dialogs" style="padding:20px">
+                <div class="message user">
+                    <div class="container">
+                        <span class="text">Is Part Number 00D5302 needed for Customer Orders?</span>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+
+                <div class="message watson">
+                    <div class="container">
+                        <span class="text">Yes, Part Number 00D5302 has shortage vs Orders Load at GUADALAJARA for STORAGE</span>
+                        <br><span style="display:block;text-align:right;color: green; font-size: 10pt">confidence 0.97</span>
+                        <span class="arrow"></span>
+                        <span style="position:absolute;bottom:0px;right:-25px;">
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-up qa-thumbs-icon"></span>
+                            </a>
+                            <br>
+                            <a onclick="openCommentPopup();" href="javascript:void(0);">
+                                <span class="glyphicon glyphicon-thumbs-down qa-thumbs-icon"></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--<h3>Column 1</h3>
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h2>Why I Went Into the Lake</h2>
+                <div class="row">
+                    <p style="padding:25px">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </article>-->
+
+        </section>
+
+        <aside class="col-xs-12 col-sm-3 col-md-3 col-ld-3 scrollable right">
+            <h3 class="related-title">
+                <b>Related Questions</b>
+            </h3>
+
+            <div class="related-list">
+                <a href="#">
+                    <p>Is Part Number OOD5321 for Customer Orders ?</p>
+                </a>
+
+                <a href="#">
+                    <p>Which Brands and Locations are impacted ?</p>
+                </a>
+
+                <a href="#">
+                    <p>Do you have alternative part number ?</p>
+                </a>
+
+                <a href="#">
+                    <p>Do you have supply to be allocated ?</p>
+                </a>
+
+                <a href="#">
+                    <p>Total load WW is covered with Stock and HUB? (Including alternative)</p>
+                </a>
+            </div>
+            <h3 class="related-title">
+                <b>Related Links</b>
+            </h3>
+
+            <div class="related-list">
+                <a href="#">
+                    <p>Transparent Supply Chain</p>
+                </a>
+
+                <a href="#">
+                    <p>Operation Center</p>
+                </a>
+
+                <a href="#">
+                    <p>Resolution Rooms</p>
+                </a>
+
+                <a href="#">
+                    <p>Reports</p>
+                </a>
+            </div>
+
+
+        </aside>
+
+
+    </div>
+</div>
+<footer>
+    <nav class="navbar navbar-default navbar-fixed-bottom qa-navbarFooter">
+        <div class="container-fluid">
+            <div class="navbar-footer">
+                <form class="navbar-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control qa-input" placeholder="Text Here...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

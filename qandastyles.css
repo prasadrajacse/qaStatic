@@ -1,0 +1,428 @@
+
+
+/********************************************************
+ ***********************DEPENDENCIES*********************
+ ********************************************************/
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    //src: url('../fonts/helvetica-neue-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: bold;
+   // src: url('../fonts/helvetica-neue-bold.woff2') format('woff2');
+}
+
+
+/********************************************************
+ ***********************GENERIC CSS*********************
+ ********************************************************/
+html, body {
+    height: 100%;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+
+/* ALIGNMENTS */
+.vertical-center {
+    align-self: center;
+    justify-content: center;
+}
+
+
+/* Outer Blocks */
+.wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    /*background: #fff url('../images/cross-hatch.png') repeat left top;*/
+}
+
+.wrapper-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+/***** SPLASH SCREEN *****/
+.wrapper-inner .home-content {
+    width: 100%;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content .watson-welcome {
+    height: 160px;
+   // background: url('../images/splash.jpg') no-repeat center top;
+}
+
+.home-content .form-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#047bb0+0,008abf+100 */
+    background: #047bb0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #047bb0 0%, #008abf 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #047bb0 0%,#008abf 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #047bb0 0%,#008abf 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047bb0', endColorstr='#008abf',GradientType=0 ); /* IE6-9 */
+}
+
+.home-content .form-container h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 30px;
+}
+
+.home-content .form-container input {
+    width: 50%;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 40px;
+    padding-top: 30px;
+    align-self: center;
+    text-align: center;
+    background: transparent;
+    border-bottom: solid 1px #fff;
+}
+
+
+
+/***** HOME SCREEN *****/
+.inner {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.inner .header,
+.inner .footer {
+    height: 121px;
+    width: 100%;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#047bb0+0,008abf+100 */
+    background-color: #FF5050;  /* Old browsers */
+}
+
+.inner .content {
+    width: 100%;
+    height: calc(100% - 140px);
+    display: flex;
+    flex-direction: row;
+}
+
+.inner .content .left,
+.inner .content .right {
+    width: 20%;
+    background-color: #CECECE;
+}
+
+.inner .content .center {
+    width: 80%;
+}
+
+.inner .footer {
+    height: 50px;
+}
+
+
+/***********************************************************************
+ *********************** HEADER SECTION ********************************/
+.inner .header {
+    padding: 8px;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.header .panel {
+    height: 100%;
+}
+
+.header .panel .left {
+    float: left;
+    height: 100%;
+    width: auto;
+
+    color: #fff;
+    font-weight: bold;
+}
+
+.header .panel .left .title {
+    float: left;
+    font-size: 25px;
+}
+.header .panel .left .write-ups {
+    font-weight: 500;
+    float: left;
+    display: inline-block;
+    padding-left: 10px;
+    line-height: 30px;
+}
+
+.header .panel .right {
+    float: right;
+    height: 100%;
+    width: auto;
+    line-height: 35px;
+    color: #fff;
+}
+
+.header .user-name {
+    font-weight: bold;
+}
+
+
+/***********************************************************************
+ *********************** HEADER SECTION ********************************/
+.inner .information {
+    height: 50px;
+    width: 100%;
+    padding-left: 120px;
+    background: #f4f4f4;
+    background-size: 5%;
+    border-bottom: solid 1px #ccc;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.inner .information .welcome-msg {
+    padding-top: 20px;
+    font-size: 15px;
+    /*color: #eee;*/
+}
+
+/* CENTERPANEL */
+.panel.center {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.panel.center .dialogs {
+    height: calc(100% - 0px);
+}
+
+.panel.center .command {
+    height: 100px;
+    display: flex;
+    border-top: solid 2px #dbdbdb;
+    padding: 0px 10px;
+    background-color:#EEE;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.panel.center .command .text-command {
+    height: 50%;
+    min-height: 50px;
+    align-self: center;
+    background-color: #EEE;
+    text-indent: 10px;
+  //  color: #0000;
+    margin: 0px 10px;
+    border: none;
+    outline: 0px;
+    width: 100%;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+
+/* PANEL RIGHT */
+.inner .content .right .section {
+    padding: 10px;
+}
+
+.content .right .section .title {
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: solid 3px #333;
+    color: #333;
+}
+
+.content .right .section ul,
+.content .right .section ul li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.content .right .section ul li {
+    padding: 5px;
+    border-bottom: dotted 0px #eee;
+}
+
+.content .right .section ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+
+
+/********************************************************************************
+ ********************************DIALOG CONTAINER********************************
+ ********************************************************************************/
+.dialogs {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    overflow-y: scroll;
+}
+
+.dialogs .message-holder {
+    padding: 10px 40px;
+    min-height: 0px;
+}
+
+.dialogs .message {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+}
+
+.dialogs .message .container {
+    padding: 10px;
+    min-width: 150px;
+    min-height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #f3f3f3;
+    position: relative;
+    max-width: 50%;
+}
+
+.dialogs .message.user .container {
+    float: right;
+    padding-right: 20px;
+    background: #f4f4f4;
+}
+
+.dialogs .message.watson .container span.arrow,
+.dialogs .message.user .container span.arrow {
+    width: 15px;
+    height: 16px;
+    bottom: 0px;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.dialogs .message.watson .container span.arrow {
+    left: -15px;
+    background-image: url('images/watson-arrow.png');
+}
+
+.dialogs .message.user .container span.arrow {
+    right: -15px;
+    background-image: url('images/user-arrow.png');
+}
+
+.dialogs .message.watson .container {
+    float: left;
+    padding-left: 20px;
+    background-color: #cecece;
+}
+
+/********************************************************************************
+***********************************MEDIA QUERY***********************************
+*********************************************************************************/
+
+@media screen and (max-width: 992px) {
+
+    .home-content .form-container h2 {
+        font-size: 5.2vw;
+    }
+
+    .home-content .form-container input {
+        font-size: 4.5vw;
+    }
+}
+/********************************************************************************
+***********************************Disclaimer POP-up style***********************************
+********************************************************************************/
+.disclaimerPopup{
+    border-width:0.5px;
+    border-style:solid;
+    border-color:#EDEDED;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:1px;
+    padding-bottom:5px;
+    font-family:Helvetica Neue;
+    position:absolute;
+    margin: -100px 0 0 -150px;
+}
+
+.disclaimerPopupButton{
+    background:#5677BA;
+    color:white;
+    margin:auto;
+    display:block;
+}
+
+.commentBoxPopup{
+    border-width:0.5px;
+    border-style:solid;
+    border-color:#EDEDED;
+    background:#fff;
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:1px;
+    padding-bottom:5px;
+    font-family:Helvetica Neue;
+    font-color:#414141;
+    font-weight:bold;
+    position:absolute;
+    margin: -100px 0 0 -150px;
+}
+
+.commentBoxPopupButton{
+    background:#5677BA;
+    color:white;
+    float:right;
+    display:block;
+}
+
+.commentBoxInputText{
+    width:300px;
+    height:50px;
+    font-weight:normal;
+    text-color:#414141;
+}
+
+.thumbs-up-down-div
+{
+    width: 15px;
+    height: 16px;
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
